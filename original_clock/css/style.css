@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+#time{
+    font-family: 'Iceland', cursive;
+    font-size: 100px;
+    text-align: center;
+}
+
+.btnList{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.btn{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+
+.btn p{
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transform: translateY(-14px);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn__1{
+    background-color: red;
+}
+
+.btn__2{
+    background-color: blue;
+    margin: 0 100px;
+}
+
+.btn__3{
+    background-color: green;
+}

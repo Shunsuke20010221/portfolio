@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <p id="time">00:00:00</p>
+
+        <div class="btnList">
+            <div class="btn btn__1"><p>1</p></div>
+            <div class="btn btn__2"><p>2</p></div>
+            <div class="btn btn__3"><p>3</p></div>
+        </div>
+
+    </div>
+    <script>
+        "use strict";
+        const time = document.querySelector('#time');
+        const btn = document.querySelectorAll('.btn');
+        let no = 0;
+
+        const addZero = (num) => {
+            num = num < 10 ? `0${num}` : num;
+            return num;
+        }
+
+                const clock = () => {
+                    const now = new Date();
+                    let hour = now.getHours();//時
+                    let min = now.getMinutes();//分
+                    let sec = now.getSeconds();//秒
+                    time.innerHTML = `${addZero(hour)}:${addZero(min)}:${addZero(sec)}`;
+                    requestAnimationFrame(clock);            
+                }
+                clock();
+
+            btn[0].addEventListener('click', () => {
+                const clock = () => {
+                    const now = new Date();
+                    let hour = now.getHours();//時
+                    let min = now.getMinutes();//分
+                    let sec = now.getSeconds();//秒
+                    time.innerHTML = `${addZero(hour)}:${addZero(min)}:${addZero(sec)}`;
+                    requestAnimationFrame(clock);            
+                }
+                clock();
+            });
+
+            btn[1].addEventListener('click', () => {
+                const clock = () => {
+                    const now = new Date();
+                    let hour = now.getHours();//時
+                    let min = now.getMinutes();//分
+                    let sec = now.getSeconds();//秒
+                    time.innerHTML = `${addZero((hour*60)+min)}:${addZero(sec)}`;
+                    requestAnimationFrame(clock);            
+                }
+                clock();
+            });
+
+            btn[2].addEventListener('click', () => {
+                const clock = () => {
+                    const now = new Date();
+                    let hour = now.getHours();//時
+                    let min = now.getMinutes();//分
+                    let sec = now.getSeconds();//秒
+                    time.innerHTML = `${addZero((hour*3600)+(min*60)+sec)}`;
+                    requestAnimationFrame(clock);            
+                }
+                clock();
+            });
+    </script>
+</body>
+</html>
