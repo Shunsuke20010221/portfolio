@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>トップページ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/top.css">
+    <script src="https://kit.fontawesome.com/573e3bec15.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+            <h1><img class="logo__img" src="images/logo.png" alt="ロゴ"></h1>
+        <div class="wrapper">
+            <div class="btnlist--1">
+                <p class="login btn">ログイン</p>
+                <a class="new_customer btn" href="#">新規登録</a>
+            </div>
+            <div class="btnlist--2">
+                <form action="">
+                    <p class="form__item"><input type="text" name="email" inputmode="email" placeholder="メールアドレス"></p>
+                    <p class="form__item"><input type="password" name="pass" placeholder="パスワード"></p>
+                    <div class="form__item--login">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <p><input type="submit" value="ログイン"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        "use strict";
+        const loginBtn = document.querySelector('.login');
+        const btnlist1 = document.querySelector('.btnlist--1');
+        const btnlist2 = document.querySelector('.btnlist--2');
+        const prev = document.querySelector('.fa-solid');
+
+        loginBtn.addEventListener('mousedown', () => {
+            btnlist1.classList.add('active');
+            btnlist2.classList.add('active');
+        });
+
+        prev.addEventListener('mousedown', () => {
+            btnlist1.classList.remove('active');
+            btnlist2.classList.remove('active');
+        });
+    </script>
+</body>
+</html>

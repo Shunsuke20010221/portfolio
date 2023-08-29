@@ -1,0 +1,251 @@
+@charset "utf-8";
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5em;
+    background: rgb(82,157,245);
+    background: linear-gradient(180deg, rgba(82,157,245,1) 0%, rgba(169,250,255,1) 64%, rgba(239,239,239,1) 100%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 18%;
+}
+
+nav {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav__icons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    display: block;
+    height: 50px;
+}
+
+nav img:nth-of-type(2) {
+    height: 30px;
+}
+
+.nav__bar {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin-top: .5em;
+    border-top: solid 2px #fff;
+}
+
+.nav__text {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    cursor: pointer;
+}
+
+.nav__text.active {
+    background-color: rgba(214, 214, 214, .3);
+}
+
+.main {
+    display: flex;
+    width: 200%;
+    height: 82%;
+    transition: transform .3s linear;
+}
+
+.main.active {
+    transform: translateX(-100vw);
+}
+
+.main__contents {
+    width: 100%;
+    height: 100%;
+}
+
+.main__contents-1 {
+}
+
+.weather {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.advice {position: relative;
+    width: 90%;
+    height: 47%;
+    margin: 0 auto;
+    backdrop-filter: contrast(.9);
+    border-radius: 30px;
+}
+
+.advice__in {
+    width: 65%;
+    padding-left: 20px;
+}
+
+.advice__title {
+    font-size: 1.3em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #fff;
+    letter-spacing: -1px;
+    padding-top: 1.3em;
+    margin-bottom: .65em;
+}
+
+.advice__text {
+    width: 90%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #fff;
+    font-size: 12px;
+}
+
+.advice__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    display: block;
+    width: calc(100% - 65%);
+    height: 90%;
+    object-fit: cover;
+}
+
+.date {
+    font-size: 1.5em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #fff;
+}
+
+.small {
+    font-size: .75em;
+}
+
+.weather__contents {
+    display: flex;
+    align-items: center;
+}
+
+/* .weather_icon {
+} */
+
+.current_list {
+    margin-left: 2em;
+    font-size: 1em;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #fff;
+}
+
+.current_temp {
+    font-size: 3em;
+}
+
+input[type="range"] {
+    position: relative;
+    align-items: center;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 2px;
+    /* background-color: #fff; */
+    background: rgb(157,237,253);
+    background: linear-gradient(90deg, rgba(157,237,253,1) 0%, rgba(157,237,253,1) 2%, rgba(255,255,255,1) 3%, rgba(255,255,255,1) 97%, rgba(157,237,253,1) 98%, rgba(157,237,253,1) 100%);
+}
+
+input[type="range"]::before,
+input[type="range"]::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+input[type="range"]::before {
+    left: 5px;
+}
+
+input[type="range"]::after {
+    right: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #69C9FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: #69C9FF;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: solid 1px #fff;
+}
+
+input[type="range"]::-moz-focus-outer {
+    border: 0;
+}
+
+.time {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    color: #6d6d6d;
+    transform: translateX(2px);
+}
+
+.time li:nth-of-type(2),
+.time li:nth-of-type(3),
+.time li:nth-of-type(4),
+.time li:nth-of-type(5) {
+    margin-left: 13%;
+}
+
+.time li:nth-of-type(6){
+    margin-left: 11.3%;
+}
+
+.time li:nth-of-type(7)  {
+    margin-left: 10%;
+}
+
+.c {
+    font-size: 1.5rem;
+}
+
+.main__contents-2 {
+    background-color: #000;
+}
+

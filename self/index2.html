@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>self</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="menu">
+
+    </div> -->
+    <div class="container">  
+        <header>
+            <nav>
+                <div class="nav__icons">
+                    <img src="images/logo_2.png" alt="">
+                    <img class="humburger" src="images/humburger.png" alt="">
+                </div>
+                <div class="nav__bar">
+                    <p class="nav__text active">天気</p>
+                    <p class="nav__text">今の状況</p>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="main__contents main__contents-1">
+                <div class="weather">
+                    <!-- <form action=""> -->
+                        <p class="date"><span class="month">2</span><span class="small">月</span><span class="day">1</span><span class="small">日の</span>
+                            <select name="住所" id="select_box">
+                                <option value="hokkaido">北海道</option>
+                                <optgroup label="東北">
+                                    <option value="aomori">青森県</option>
+                                    <option value="akita">秋田県</option>
+                                    <option value="iwate">岩手県</option>
+                                    <option value="yamagata">山形県</option>
+                                    <option value="miyagi">宮城県</option>
+                                    <option value="fukushima">福島県</option>
+                                </optgroup>
+                                <optgroup label="関東">
+                                    <option value="ibaraki">茨城県</option>
+                                    <option value="tochigi">栃木県</option>
+                                    <option value="gunma">群馬県</option>
+                                    <option value="saitama">埼玉県</option>
+                                    <option value="chiba">千葉県</option>
+                                    <option value="tokyo">東京都</option>
+                                    <option value="kanagawa">神奈川県</option>
+                                </optgroup>
+                                <optgroup label="中部">
+                                    <option value="niigata">新潟県</option>
+                                    <option value="toyama">富山県</option>
+                                    <option value="ishikawa">石川県</option>
+                                    <option value="fukui">福井県</option>
+                                    <option value="yamanashi">山梨県</option>
+                                    <option value="nagano">長野県</option>
+                                    <option value="gifu">岐阜県</option>
+                                    <option value="shizuoka">静岡県</option>
+                                    <option value="aichi">愛知県</option>
+                                </optgroup>
+                                <optgroup label="近畿">
+                                    <option value="mie">三重県</option>
+                                    <option value="shiga">滋賀県</option>
+                                    <option value="kyoto">京都府</option>
+                                    <option value="oosaka">大阪府</option>
+                                    <option value="gyougo">兵庫県</option>
+                                    <option value="nara">奈良県</option>
+                                    <option value="wakayama">和歌山県</option>
+                                </optgroup>
+                                <optgroup label="中国">
+                                    <option value="okayama">岡山県</option>
+                                    <option value="hiroshima">広島県</option>
+                                    <option value="tottori">鳥取県</option>
+                                    <option value="shimane">島根県</option>
+                                    <option value="yamaguchi">山口県</option>
+                                </optgroup>
+                                <optgroup label="四国">
+                                    <option value="tokushima">徳島県</option>
+                                    <option value="kagawa">香川県</option>
+                                    <option value="ehime">愛媛県</option>
+                                    <option value="kouchi">高知県</option>
+                                </optgroup>
+                                <optgroup label="九州沖縄">
+                                    <option value="fukuoka">福岡県</option>
+                                    <option value="saga">佐賀県</option>
+                                    <option value="nagasaki">長崎県</option>
+                                    <option value="kumamoto">熊本県</option>
+                                    <option value="ooita">大分県</option>
+                                    <option value="miyazaki">宮崎県</option>
+                                    <option value="kagoshima">鹿児島県</option>
+                                    <option value="okinawa">沖縄県</option>
+                                </optgroup>
+                            </select>        
+                        </p>
+                    <!-- </form>     -->
+                    <div class="weather__contents">
+                        <img class="weather_icon" src="" alt="">
+                        <ul class="current_list">
+                            <li class="current_temp"></li>
+                            <li class="current_humi"></li>
+                            <li class="current_wind"></li>
+                        </ul>
+                    </div>
+                    <input type="range" class="slider" min="0"  max="719" value="0">
+                    <ul class="time">
+                        <li>0</li>
+                        <li class="in">2</li>
+                        <li class="in">4</li>
+                        <li class="in">6</li>
+                        <li class="in">8</li>
+                        <li class="in">10</li>
+                        <li>12</li>
+                    </ul>
+                </div>
+                <div class="advice">
+                    <div class="advice__in">
+                        <h2 class="advice__title">今日のオススメの服装</h2>
+                        <p class="advice__text">
+                            少し肌寒さを感じるものの、比較的過
+                            ごしやすい季節です。 薄手の羽織りが
+                            欲しい時期なので、シャツワンピース
+                            などがおすすめ。 また、長袖トップス
+                            にニットベストをプラスしたレイヤー
+                            ドコーデも楽しめる温度感なので、
+                            コーデの幅も広がります。 春には明る
+                            い色、秋には深みのある色を選び、季
+                            節に合ったカラーも取り入れてみま
+                            しょう。
+                        </p>
+                    </div>
+                    <img class="advice__img" src="images/image_adobe_express.png" alt="">
+                </div>
+            </div>
+            <div class="main__contents main__contents-2">
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="js/day.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/current.js"></script>
+    <!-- <script src="js/time.js"></script> -->
+</body>
+</html>
